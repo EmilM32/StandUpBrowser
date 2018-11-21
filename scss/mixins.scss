@@ -1,0 +1,43 @@
+@mixin mQ($arg) {
+  @media screen and (max-width: $arg) {
+    @content;
+  }
+}
+@mixin grid($cols, $mgn){
+  float: left;
+  width: ((100% - (($cols - 1) * $mgn)) / $cols );
+  height: 350px;
+  margin-right: $mgn;
+  margin-bottom: $mgn;
+  &:nth-child(#{$cols}n){
+    margin-right: 0;
+  }
+}
+@mixin transition($s) {
+  -webkit-transition: all $s ease;
+  -moz-transition: all $s ease;
+  -o-transition: all $s ease;
+  transition: all $s ease;
+}
+@mixin button($color) {
+  background-color: $color;
+  border: 1px solid darken($color, 10);
+  color: $light;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($color, 10);
+  }
+}
+@mixin position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  z-index: 10;
+  text-align: center;
+}

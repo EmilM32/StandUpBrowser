@@ -1,0 +1,144 @@
+html, body {
+  height: 100%;
+  width: 100vw; }
+
+body {
+  background-color: #0D0D0D !important;
+  margin: 0 auto;
+  color: white; }
+
+a {
+  text-decoration: none; }
+
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: #8C0707;
+  position: fixed;
+  top: 0px;
+  z-index: 30; }
+  nav span {
+    display: block;
+    text-align: center;
+    font-family: Nunito;
+    padding-left: 100px;
+    color: #F2F2F2;
+    font-size: 35px; }
+    @media screen and (max-width: 500px) {
+      nav span {
+        font-size: 20px;
+        padding-top: 10px; } }
+  nav img {
+    width: 100px;
+    float: right;
+    padding-top: 5px;
+    opacity: .7; }
+    nav img:hover {
+      opacity: 1; }
+
+#cards {
+  margin-top: 60px;
+  margin-left: 3%;
+  margin-right: 3%;
+  color: #F2F2F2; }
+
+.cardColor {
+  border-radius: 8px;
+  background-color: rgba(33, 33, 33, 0.3) !important;
+  float: left;
+  width: 15%;
+  height: 350px;
+  margin-right: 2%;
+  margin-bottom: 2%; }
+  .cardColor:nth-child(6n) {
+    margin-right: 0; }
+  @media screen and (max-width: 900px) {
+    .cardColor {
+      float: left;
+      width: 49%;
+      height: 350px;
+      margin-right: 2%;
+      margin-bottom: 2%; }
+      .cardColor:nth-child(2n) {
+        margin-right: 0; } }
+  .cardColor:hover {
+    background-color: rgba(33, 33, 33, 0.8) !important; }
+
+.singleCard {
+  text-align: center;
+  position: relative;
+  display: block; }
+  .singleCard img {
+    padding: 8px 8px 0px 8px;
+    z-index: 2; }
+
+.img-fluid {
+  max-width: 90%;
+  height: auto; }
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  z-index: 10;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: rgba(33, 33, 33, 0.8);
+  width: 100%;
+  height: 100%;
+  line-height: 70px;
+  opacity: 0; }
+  .text:hover {
+    opacity: 1; }
+  .text .imdbLink {
+    color: #DBA306; }
+
+.buttonNetflix {
+  background-color: #8C0707;
+  border: 1px solid #5b0505;
+  color: #F2F2F2;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; }
+  .buttonNetflix:hover {
+    background-color: #5b0505; }
+
+.buttonInfo {
+  background-color: #F2F2F2;
+  border: 1px solid #d9d9d9;
+  color: #F2F2F2;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  color: black; }
+  .buttonInfo:hover {
+    background-color: #d9d9d9; }
+
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  z-index: 10;
+  text-align: center;
+  background-color: rgba(33, 33, 33, 0.9);
+  width: 95%;
+  height: 100%;
+  line-height: 30px;
+  padding-top: 10%;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+@media screen and (max-width: 400px) {
+  .duration {
+    font-size: 10px; } }
